@@ -1,0 +1,30 @@
+.register-page-wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 190px;
+}
+
+.register-page-wrapper .img-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.form-wrapper .title-wrapper {
+  margin-top: 20px;
+  margin-bottom: 14px;
+}
+
+.form-wrapper .title-wrapper p {
+  color: #082777;
+}
+
+.checkbox-wrapper label {
+  font-size: 11px;
+  margin-left: 8px;
+}
+
+@media all and (max-width: 1199.98px) {
+  .register-page-wrapper {
+    padding-top: 80px;
+  }
+}
