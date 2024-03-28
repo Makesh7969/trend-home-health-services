@@ -19,7 +19,7 @@
 }
 
 .checkbox-wrapper label {
-  font-size: 11px;
+  font-size: 12px;
   margin-left: 8px;
 }
 
@@ -30,6 +30,18 @@
 }
 
 /* Login page */
+
+.register-page-wrapper.login .carousel.slide {
+  position: unset;
+}
+
+.register-page-wrapper.login .carousel.slide .carousel-inner .carousel-item img {
+  height: 400px;
+}
+
+.register-page-wrapper.login .carousel.slide .carousel-indicators button {
+  background-color: #0cd0a2;
+}
 
 .register-page-wrapper.login .form-wrapper .title-wrapper {
   margin-top: 30px;
