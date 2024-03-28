@@ -18,7 +18,7 @@
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }
 
-.sidebar-column .sidebar .sidebar-list >*+*{
+.sidebar-column .sidebar .sidebar-list > * + * {
   margin-top: 52px;
   display: block;
 }
@@ -33,7 +33,7 @@
 .sidebar .sidebar-list a.active::before {
   position: absolute;
   content: "";
-  background-image: url('../images/active_bar.svg');
+  background-image: url("../images/active_bar.svg");
   background-repeat: no-repeat;
   width: 8px;
   height: 81px;
@@ -147,6 +147,16 @@
   color: black !important;
 }
 
+.dropdowns-section {
+  padding-bottom: 22px;
+  gap: 34px;
+}
+
+.status-wrapper label,
+.location-wrapper label {
+  font-weight: 500;
+}
+
 .dashboard-tabs {
   background-color: #ff5e45;
   display: flex;
@@ -160,6 +170,7 @@
   text-align: center;
   padding: 25px 28px;
   position: relative;
+  min-width: 145px;
 }
 
 .dashboard-tabs.green {
@@ -211,7 +222,7 @@
 }
 
 .table-wrapper .table-center-heading-data {
-  gap: 17px;
+  gap: 45px;
   font-size: 16px;
   font-weight: 500;
 }
@@ -278,7 +289,7 @@ table thead tr {
 }
 
 table thead tr td {
-  color: #5e63f27c;
+  color: #5e63f2;
   font-size: 16px;
   font-weight: 600;
   padding-bottom: 20px;
@@ -319,34 +330,71 @@ table tbody tr td input[type="text"] {
   width: 100%;
 }
 
+.pagination-wrapper .data-section .green span {
+  width: 32px;
+  height: 26px;
+  border: 1px solid #0cd0a2;
+  background-color: #d9fff6;
+  border-radius: 6px;
+  margin-right: 10px;
+  display: block;
+}
+
+.pagination-wrapper .data-section .yellow span {
+  width: 32px;
+  height: 26px;
+  border: 1px solid #ffc500;
+  background-color: #fff6d8;
+  border-radius: 6px;
+  margin-right: 10px;
+  display: block;
+}
+
+.pagination-wrapper .data-section .red span {
+  width: 32px;
+  height: 26px;
+  border: 1px solid #ff0a38;
+  background-color: #ffeff2;
+  border-radius: 6px;
+  margin-right: 10px;
+  display: block;
+}
+.pagination-wrapper .data-section .green p,
+.pagination-wrapper .data-section .yellow p,
+.pagination-wrapper .data-section .red p {
+  color: #1c1b1f;
+  font-weight: 500;
+  font-size: 12px;
+}
+
 .pagination-wrapper {
   padding-top: 62px;
 }
 
 .pagination-wrapper .count-text p {
-  color: #B5B7C0;
+  color: #b5b7c0;
 }
 
 .pagination {
   margin-bottom: 0;
 }
 
-.pagination >*+* {
+.pagination > * + * {
   margin-left: 12px;
 }
 
 .pagination li a {
   padding: 6px 9px;
-  background-color: #F5F5F5;
-  border: 1px solid #EEEEEE;
-  color: #404B52 !important;
+  background-color: #f5f5f5;
+  border: 1px solid #eeeeee;
+  color: #404b52 !important;
   border-radius: 4px;
 }
 
 .pagination li a.active {
   padding: 5px 9px;
-  background-color: #0CD0A2;
-  color: #FFF !important;
+  background-color: #0cd0a2;
+  color: #fff !important;
   border-radius: 4px;
   border: 1px solid transparent;
 }
