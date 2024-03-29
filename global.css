@@ -85,6 +85,19 @@ button:focus {
   border: none;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+@media all and (max-width: 1300px) {
+  .main {
+    height: unset;
+  }
+}
+
 .divider-line {
   width: 3px;
   height: 100%;
@@ -401,8 +414,8 @@ button:focus {
 
 /* Footer Start */
 footer {
-  padding-top: 102px;
-  padding-bottom: 75px;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 footer .content-wrapper > * + * {

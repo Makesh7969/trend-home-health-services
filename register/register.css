@@ -1,7 +1,13 @@
 .register-page-wrapper {
   display: flex;
   align-items: center;
-  padding-top: 190px;
+  padding-top: 130px;
+}
+
+@media screen and (max-width: 1600px) {
+  .register-page-wrapper {
+    padding-top: 80px;
+  }
 }
 
 .register-page-wrapper .img-wrapper img {
