@@ -34,14 +34,17 @@ a:hover {
   border-bottom: 1px solid transparent;
 }
 
+.select-control,
 input {
   color: #082777;
   font-size: 16px;
   background-color: #ddeafb;
   border-radius: 10px;
   border: none;
+  appearance: none;
 }
 
+select,
 input[type="text"],
 input[type="password"] {
   padding: 12px 16px;
@@ -55,6 +58,8 @@ input[type="checkbox"] {
   width: 16px;
 }
 
+select:active,
+select:focus,
 input:active,
 input:focus {
   outline: none;
