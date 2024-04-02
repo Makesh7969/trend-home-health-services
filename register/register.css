@@ -4,9 +4,26 @@
   padding-top: 70px;
 }
 
+.register-page-wrapper .register-page-parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 100px;
+  position: relative;
+  align-items: end;
+}
+
+.register-page-wrapper .form-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-color: #d3e2f4;
+  left: 50%;
+}
+
 @media screen and (max-width: 1600px) {
   .register-page-wrapper {
-    padding-top: 80px;
+    padding-top: 50px;
   }
 }
 
@@ -20,8 +37,20 @@
   margin-bottom: 14px;
 }
 
+.register-page-wrapper.login .form-wrapper .title-wrapper h1 {
+  font-size: 40px;
+}
+
+.register-page-wrapper .form-wrapper .title-wrapper h1 {
+  font-size: 30px;
+}
+
 .form-wrapper .title-wrapper p {
   color: #082777;
+}
+
+.form-wrapper .logo-img {
+  height: 90px;
 }
 
 .checkbox-wrapper label {
@@ -45,17 +74,38 @@
   height: 400px;
 }
 
+.register-page-wrapper.login .carousel.slide .carousel-indicators {
+  bottom: -24px;
+  margin-bottom: 13px;
+}
+
 .register-page-wrapper.login .carousel.slide .carousel-indicators button {
   background-color: #0cd0a2;
 }
 
 .register-page-wrapper.login .form-wrapper .title-wrapper {
-  margin-top: 30px;
-  margin-bottom: 36px;
+  margin-top: 20px;
+  margin-bottom: 26px;
 }
 
 .register-page-wrapper.login .form-wrapper .form-field-wrapper > * + * {
-  margin-top: 32px;
+  margin-top: 22px;
+}
+
+.form-wrapper .form-field-wrapper > * + * {
+  margin-top: 14px !important;
+}
+
+.form-wrapper .form-field-wrapper .select-wrapper::after {
+  content: "";
+  position: absolute;
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='15' height='7' viewBox='0 0 15 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1L7.5 6L13.5 1' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  width: 15px;
+  height: 7px;
+  filter: brightness(0.3);
+  top: 20px;
+  right: 18px;
+
 }
 
 /* forgot-password section */

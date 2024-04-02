@@ -139,29 +139,6 @@
   left: 10px;
 }
 
-.header-profile-wrapper {
-  padding-right: 50px;
-}
-
-.header-profile-wrapper img {
-  margin-right: 12px;
-  height: 30px;
-}
-
-.header-profile-wrapper .dropdown-toggle {
-  color: white;
-  cursor: pointer;
-  font-size: 11px;
-}
-
-.header-profile-wrapper .dropdown-toggle .icon {
-  position: relative;
-  left: 10px;
-}
-
-.header-profile-wrapper .dropdown-toggle::after {
-  content: none;
-}
 .dashboard-heading-section .content {
   padding: 15px 30px;
 }
@@ -281,7 +258,7 @@
 }
 .table-wrapper .table-heading-data h5 {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   margin: auto 0;
 }
 

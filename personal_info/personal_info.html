@@ -142,19 +142,24 @@
           </section>
           <!-- Dashboard Table -->
           <section class="form-section bg-white">
-            <div
-              class="form-headings-wrapper d-flex align-items-center justify-content-between"
-            >
-              <a href="#" class="active">Prospect registration</a>
-              <a href="#">Save Information</a>
-              <a href="#">Schedule Interview</a>
-              <a href="#">Confirm Interview</a>
-              <a href="#">Cancel Interview</a>
-              <a href="#">Reject</a>
-              <a href="#">Apply</a>
+            <div class="form-headings-wrapper d-flex align-items-center justify-content-between">
+              <!-- <a href="#" class="active">Prospect registration</a> -->
+              <!-- <a href="#">Save Information</a> -->
+              <!-- <a href="#">Schedule Interview</a> -->
+              <!-- <a href="#">Confirm Interview</a> -->
+              <!-- <a href="#">Cancel Interview</a> -->
+              <!-- <a href="#">Reject</a> -->
+              <!-- <a href="#">Apply</a> -->
+			  <h6>Prospect Registration</h6>
+			  <div class="cta_wrapper d-flex">
+                <button class="success">Save Information</button>
+                <button class="danger">Clear</button>
+              </div>
             </div>
+			
             <form>
-              <h3>Personal Information</h3>
+			
+              <h3 class="heading-bg">Personal Information</h3>
               <div class="form-wrapper">
                 <div class="field-wrapper">
                   <label for="fname">First name</label>
@@ -406,7 +411,7 @@
                       <span class="cr me-3"
                         ><i class="icon icon-tick-white"></i
                       ></span>
-                      ] I can perform these essential job functions with or
+                      I can perform these essential job functions with or
                       without reasonable accommodation.
                     </label>
                   </div>
@@ -597,13 +602,13 @@
 
               <h3 class="heading-bg">Medical Information</h3>
               <div class="form-wrapper single_row">
-                <div class="field-wrapper w-25">
+                <div class="field-wrapper">
                   <p class="mb-2">
-                    Did you receive an influenza Vaccine this year?
+                    Did you receive an Influenza Vaccine this year?
                   </p>
-                  <input type="radio" id="yes1" name="radio-group" checked />
+                  <input type="radio" id="yes1" name="influenza" checked />
                   <label for="yes1">Yes</label>
-                  <input type="radio" id="no1" name="radio-group" />
+                  <input type="radio" id="no1" name="influenza" />
                   <label for="no1">No</label>
                 </div>
                 <div class="field-wrapper w-25">
@@ -623,9 +628,9 @@
                     name="business"
                   ></textarea>
                 </div>
-                <div class="field-wrapper w-25">
+                <div class="field-wrapper">
                   <p class="mb-2">
-                    Did you receive an influenza Vaccine this year?
+                    Did you receive an Hepatitis Vaccine this year?
                   </p>
                   <input type="radio" id="yes" name="radio-group" checked />
                   <label for="yes">Yes</label>
@@ -650,10 +655,7 @@
                   ></textarea>
                 </div>
               </div>
-              <div class="cta_wrapper d-flex">
-                <button class="success">Save</button>
-                <button class="danger">Clear</button>
-              </div>
+              
             </form>
           </section>
         </div>

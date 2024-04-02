@@ -28,8 +28,8 @@
     <div class="main">
       <section class="register-page-wrapper login">
         <div class="container">
-          <div class="row">
-            <div class="col-xl-6 d-xl-block d-none position-relative">
+          <div class="register-page-parent">
+            <div class="position-relative">
               <div
                 id="carouselExampleControls"
                 class="carousel slide position-unset"
@@ -82,40 +82,35 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-1 d-flex justify-content-center">
-              <div class="divider-line"></div>
-            </div>
-            <div class="col-xl-5">
-              <div class="form-wrapper">
-                <img src="../images/logo.svg" />
-                <div class="title-wrapper">
-                  <h1>Login</h1>
-                  <div class="small-bar"></div>
-                </div>
-                <form class="form-field-wrapper">
-                  <input type="text" name="username" placeholder="Username" />
-                  <div class="password-wrapper position-relative">
-                    <input
-                      type="password"
-                      name="password"
-                      placeholder="Password"
-                    /><i class="icon icon-eye"></i>
-                  </div>
-                  <div
-                    class="forgot-password-wrapper d-flex align-items-center justify-content-between"
-                  >
-                    <div class="checkbox-wrapper">
-                      <label class="d-flex align-items-center">
-                        <input type="checkbox" value="" />
-                        <span class="cr"><span></span></span>
-                        <p>Remember</p>
-                      </label>
-                    </div>
-                    <a href="#">Forgot password?</a>
-                  </div>
-                  <button>Login</button>
-                </form>
+            <div class="form-wrapper">
+              <img src="../images/logo.svg" class="logo-img"/>
+              <div class="title-wrapper">
+                <h1>Login</h1>
+                <div class="small-bar"></div>
               </div>
+              <form class="form-field-wrapper" method="get" action="/staff_manager/staff_manager.html">
+                <input type="text" name="username" placeholder="Username" />
+                <div class="password-wrapper position-relative">
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                  /><i class="icon icon-eye"></i>
+                </div>
+                <div
+                  class="forgot-password-wrapper d-flex align-items-center justify-content-between"
+                >
+                  <div class="checkbox-wrapper">
+                    <label class="d-flex align-items-center">
+                      <input type="checkbox" value="" />
+                      <span class="cr"><span></span></span>
+                      <p>Remember</p>
+                    </label>
+                  </div>
+                  <a href="#">Forgot password?</a>
+                </div>
+                <button>Login</button>
+              </form>
             </div>
           </div>
         </div>

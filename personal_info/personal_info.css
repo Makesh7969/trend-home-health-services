@@ -62,7 +62,7 @@
 
 .main-layout {
   padding-left: 60px;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
 }
@@ -268,9 +268,13 @@
 }
 
 .form-section .form-headings-wrapper {
-  background-color: #f5f5f5;
-  border-radius: 5px;
-  padding: 8px 19px 8px;
+	background-color: #f0f0f0;
+    border-radius: 5px;
+    padding-left: 10px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .form-section .form-headings-wrapper a {
@@ -318,19 +322,21 @@ form h3 {
 form h3.heading-bg {
   background-color: #f5f5f5;
   margin-top: 12px;
-  padding-left: 30px;
+  padding-left: 12px;
   padding-right: 30px;
 }
 
 form .form-wrapper .field-wrapper label {
-  color: #666666;
-  font-size: 12px;
-  font-weight: 600;
+  color: #071c50;
+  font-size: 14px;
+  font-weight: 400;
   margin-bottom: 8px;
 }
 
 form .form-wrapper .field-wrapper p {
-  font-size: 12px;
+	font-size: 14px;
+	color: #071c50;
+	font-weight: 400;
 }
 
 form .form-wrapper .field-wrapper ::-webkit-file-upload-button {
@@ -462,19 +468,21 @@ form .form-wrapper .field-wrapper textarea {
 }
 
 .cta_wrapper {
-  margin-top: 12px;
+  margin-top: 7px;
 }
 
 .cta_wrapper button {
-  flex: 1;
-  padding: 16px;
-  box-shadow: unset;
-  max-width: 170px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 400;
-  border: 1px solid transparent;
+	flex: 1;
+    padding: 16px;
+    box-shadow: unset;
+    width: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 .cta_wrapper button.success:hover {
@@ -494,6 +502,6 @@ form .form-wrapper .field-wrapper textarea {
   background-color: #ff0a38;
 }
 
-.cta_wrapper > * + * {
-  margin-left: 45px;
-}
+/* .cta_wrapper > * + * { */
+  /* margin-left: 45px; */
+/* } */

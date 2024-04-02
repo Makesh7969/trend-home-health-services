@@ -28,8 +28,8 @@
     <div class="main">
       <section class="register-page-wrapper">
         <div class="container">
-          <div class="row">
-            <div class="col-xl-6 d-xl-block d-none">
+          <div class="register-page-parent">
+            <div class="position-relative">
               <div id="" class="carousel slide">
                 <div class="carousel-inner img-wrapper">
                   <div class="carousel-item active">
@@ -68,44 +68,45 @@
                 ></button>
               </div>
             </div>
-            <div class="col-xl-1 d-flex justify-content-center">
-              <div class="divider-line"></div>
-            </div>
-            <div class="col-xl-5">
-              <div class="form-wrapper">
-                <img src="../images/logo.svg" />
-                <div class="title-wrapper">
-                  <div class="small-bar"></div>
-                  <h1>Prospect <span>Registration</span></h1>
+            <div class="form-wrapper">
+              <img src="../images/logo.svg" class="logo-img"/>
+              <div class="title-wrapper">
+                <div class="small-bar"></div>
+                <h1>Prospect <span>Registration</span></h1>
+              </div>
+              <form
+                class="form-field-wrapper"
+                method="get"
+                action="/staff_manager/staff_manager.html"
+              >
+                <div class="checkbox-wrapper">
+                  <label class="d-flex align-items-center">
+                    <input type="checkbox" value="" />
+                    <span class="cr"><span></span></span>
+                    <p>
+                      Authorized to work in the U.S. on an unrestricted basis?
+                    </p>
+                  </label>
                 </div>
-                <form class="form-field-wrapper">
-                  <div class="checkbox-wrapper">
-                    <label class="d-flex align-items-center">
-                      <input type="checkbox" value="" />
-                      <span class="cr"><span></span></span>
-                      <p>
-                        Authorized to work in the U.S. on an unrestricted basis?
-                      </p>
-                    </label>
-                  </div>
-                  <input type="text" name="fname" placeholder="First Name" />
-                  <input type="text" name="lname" placeholder="Last Name" />
+                <input type="text" name="fname" placeholder="First Name" />
+                <input type="text" name="lname" placeholder="Last Name" />
+                <div class="select-wrapper position-relative">
                   <select class="select-control">
                     <option>Position</option>
                     <option>Admin</option>
                     <option>Others</option>
                   </select>
-                  <input type="text" name="email" placeholder="Email" />
-                  <div class="password-wrapper position-relative">
-                    <input
-                      type="password"
-                      name="password"
-                      placeholder="Password"
-                    /><i class="icon icon-eye"></i>
-                  </div>
-                  <button>Register</button>
-                </form>
-              </div>
+                </div>
+                <input type="text" name="email" placeholder="Email" />
+                <div class="password-wrapper position-relative">
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                  /><i class="icon icon-eye"></i>
+                </div>
+                <button>Register</button>
+              </form>
             </div>
           </div>
         </div>
